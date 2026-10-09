@@ -101,7 +101,7 @@ namespace SourceGit.ViewModels
         {
             get;
             set;
-        }
+        } = true;
 
         public bool NoVerify
         {

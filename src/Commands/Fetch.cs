@@ -26,7 +26,7 @@ namespace SourceGit.Commands
             Context = repo;
             SSHKey = remote.PrivateSSHKey;
             RaiseError = false;
-            Args = $"fetch --progress --verbose {remote.Name}";
+            Args = $"fetch --progress --verbose --no-tags {remote.Name}";
         }
 
         public Fetch(string repo, Models.Remote remote, Models.Branch remoteBranch, Models.Branch local)
